@@ -52,7 +52,7 @@ fetch("https://restcountries.com/v3.1/all")
 const renderCountries = function (arr) {
   countriesContainer.innerHTML = "";
   arr.forEach((el) => {
-    const countriesHtml = `<a href="/detailed-country.html?${
+    const countriesHtml = `<a href="./detailed-country.html?${
       el.name.common
     }"  class="country">
               <button class="country-image">
