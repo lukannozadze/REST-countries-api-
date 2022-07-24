@@ -70,7 +70,7 @@ const renderBorders = function (el) {
       .then((r) => r.json())
       .then((res) => {
         const result = res.filter((el) => el.cca3 === item);
-        borderLink.href = `/detailed-country.html?${result[0].name.common}`;
+        borderLink.href = `./detailed-country.html?${result[0].name.common}`;
       });
   });
 };
