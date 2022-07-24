@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Nunito+Sans&family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="main-header">
+      <h2>Where in the world?</h2>
+
+      <button class="mode-switcher">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mode-icon"
+          fill="none"
+          viewbox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+        <span>Dark Mode</span>
+      </button>
+    </div>
+  </header>
+  <body>
+    <div class="container-second">
+      <div class="content">
+        <a href="index.html"
+          ><button class="return-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="return-arrow"
+              viewbox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>Back</span>
+          </button>
+        </a>
+        <div class="container secondary">
+          <div class="main-country">
+            <div class="main-country-image">
+              <img
+                id="country-flag"
+                src="/design/ax.png"
+                alt="main country image"
+              />
+            </div>
+            <div class="main-country-data">
+              <div class="data">
+                <div class="main-info">
+                  <h2 id="country-name">Georgia</h2>
+                  <ul class="main-list">
+                    <li class="list-text">
+                      Native Name:
+                      <span class="api-info" id="country-name-native"
+                        >საქართველო</span
+                      >
+                    </li>
+                    <li class="list-text">
+                      Population:
+                      <span class="api-info" id="country-population"
+                        >3,714,000</span
+                      >
+                    </li>
+                    <li class="list-text">
+                      Region:
+                      <span class="api-info" id="country-region">Asia</span>
+                    </li>
+                    <li class="list-text">
+                      Sub Region:
+                      <span class="api-info" id="country-subregion"
+                        >Western Asia</span
+                      >
+                    </li>
+                    <li class="list-text">
+                      Capital:
+                      <span class="api-info" id="country-capital">Tbilisi</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="secondary-info">
+                  <ul class="secondary-list">
+                    <li class="list-text">
+                      Top Level Domain:
+                      <span class="api-info" id="country-domain">.ge</span>
+                    </li>
+                    <li>
+                      Currencies:
+                      <span class="api-info" id="country-currency"
+                        >Georgian Lari</span
+                      >
+                    </li>
+                    <li class="list-text">
+                      Languages:
+                      <span class="api-info" id="country-language"
+                        >Georgian</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border-countries">
+                <div class="border-header">
+                  <span>Border Countries:</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="detailed-country.js"></script>
+  </body>
+</html>
